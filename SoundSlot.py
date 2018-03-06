@@ -1,5 +1,9 @@
 #! /usr/bin/python
 
+"""
+Slot for each sound effecto to play
+"""
+
 import pyforms
 from pyforms                import BaseWidget
 from pyforms.controls       import ControlList
