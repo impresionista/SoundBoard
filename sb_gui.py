@@ -10,19 +10,19 @@ from SoundSlot              import SoundSlot
 #from AddMenuFuntionality    import AddMenuFuntionality
 
 
-
 #Main window
 class MainWindow( BaseWidget, SoundSlot ):
-                     
+
     def __init__(self):
-        self.baseSize
         BaseWidget.__init__(self, 'SoundBoard')
         
+#        self._panel         = ControlEmptyWidget('Song title')
+#        self._playbutton    = ControlButton('Play/Pause')
+#        self._stopbutton    = ControlButton('Stop')
+
         slot            = SoundSlot()
         slot._parent    = self
         slot.show()
-        
-        
 
     
 #    def __buttonAction(self):
@@ -33,6 +33,6 @@ class MainWindow( BaseWidget, SoundSlot ):
 #        win.parent          = self
 #        self._panel.value   = win
 #        win.show()
-        
+
 
 if __name__ == "__main__":   pyforms.start_app( MainWindow )

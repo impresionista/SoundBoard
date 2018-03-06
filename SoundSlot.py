@@ -12,10 +12,12 @@ from pyforms.controls       import ControlButton
 from pyforms.controls       import ControlEmptyWidget
 
 
-class SoundSlot(ControlEmptyWidget):
-    """docstring for SoundSlot."""
-    def __init__(self, arg):
-        super(SoundSlot, self).__init__()
+class SoundSlot(BaseWidget, ControlEmptyWidget):
+    """
+    docstring for SoundSlot.
+    """
+    def __init__(self):
+        super(SoundSlot, self).__init__('SoundSlot_1')
         self._panel         = ControlEmptyWidget('Song title')
         self._playbutton    = ControlButton('Play/Pause')
         self._stopbutton    = ControlButton('Stop')
